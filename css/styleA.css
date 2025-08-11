@@ -39,7 +39,7 @@
 }
 
 /* Базовые стили меню */
-.burger-menu {
+.aside__burger-menu {
     display: flex;
     flex-direction: column;
     gap: var(--gap-footer);
@@ -54,7 +54,7 @@
     left: 0;
 }
 
-.header__burger {
+.aside__burger {
     display: flex;
     flex-direction: column;
     gap: var(--gap-main);
@@ -76,13 +76,13 @@
 }
 
 /* Навигационное меню */
-.header__menu .nav__list {
+.aside__nav-menu .nav__list {
     display: flex;
     flex-direction: column;
     gap: var(--gap-xxlarge);
 }
 
-.header__menu .nav__list .nav__list-item {
+.aside__nav-menu .nav__list .nav__list-item {
     color: var(--color-primary-text);
     font-family: var(--font-family);
     font-size: var(--font-size-base);
@@ -93,16 +93,16 @@
     transition: color var(--transition-speed);
 }
 
-.header__menu .nav__list .nav__list-item:hover {
+.aside__nav-menu .nav__list .nav__list-item:hover {
     color: var(--color-secondary-text);
 }
 
-.header__menu .nav__list .nav__list-item.active {
+.aside__nav-menu .nav__list .nav__list-item.active {
     color: var(--color-secondary-text);
     position: relative;
 }
 
-.header__menu .nav__list .nav__list-item.active::before {
+.aside__nav-menu .nav__list .nav__list-item.active::before {
     content: "";
     position: absolute;
     left: -24px;
