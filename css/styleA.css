@@ -21,10 +21,10 @@
     --gap-section: 40px;
     --gap-main: 46px;
     --gap-header-top: 18px;
-    --gap-footer: 15%;
+    --gap-footer: 200px;
     
     /* Текст */
-    --font-family: 'TT Lakes', sans-serif;
+    --font-family: 'TTLakes', serif;
     --font-size-base: 16px;
     --font-size-large: 24px;
     --font-weight-medium: 500;
@@ -40,34 +40,34 @@
 
 /* Standard TT Lakes */
 @font-face {
-    font-family: 'TT Lakes';
-    src: url('../font/TTLakes-Regular.eot');
+    font-family: 'TTLakes';
+    src: url('../fonts/TTLakes-Regular.eot');
     src: local('TT Lakes Regular'), local('TTLakes-Regular'),
-        url('../font/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../font/TTLakes-Regular.woff') format('woff'),
-        url('../font/TTLakes-Regular.ttf') format('truetype');
+        url('../fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTLakes-Regular.woff') format('woff'),
+        url('../fonts/TTLakes-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'TT Lakes';
-    src: url('../font/TTLakes-Medium.eot');
+    font-family: 'TTLakes';
+    src: url('../fonts/TTLakes-Medium.eot');
     src: local('TT Lakes Medium'), local('TTLakes-Medium'),
-        url('../font/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
-        url('../font/TTLakes-Medium.woff') format('woff'),
-        url('../font/TTLakes-Medium.ttf') format('truetype');
+        url('../fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTLakes-Medium.woff') format('woff'),
+        url('../fonts/TTLakes-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'TT Lakes';
-    src: url('../font/TTLakes-Bold.eot');
+    font-family: 'TTLakes';
+    src: url('../fonts/TTLakes-Bold.eot');
     src: local('TT Lakes Bold'), local('TTLakes-Bold'),
-        url('../font/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../font/TTLakes-Bold.woff') format('woff'),
-        url('../font/TTLakes-Bold.ttf') format('truetype');
+        url('../fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTLakes-Bold.woff') format('woff'),
+        url('../fonts/TTLakes-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
@@ -81,11 +81,9 @@
     height: var(--size-menu-height);
     z-index: 10;
     background-color: var(--color-white);
-    box-shadow: 16px 0 16px -2px var(--color-shadow);
+    width: 320px;
     padding: 0 var(--gap-xlarge);
-    position: absolute;
-    top: 0;
-    left: 0;
+   
 }
 
 .aside__burger {
