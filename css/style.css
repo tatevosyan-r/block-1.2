@@ -374,16 +374,12 @@ HTML {
     .conteiner {
         display: grid;
         grid-template-columns: minmax(320px, auto) 1fr;
-        /* 1fr займёт остальное место */
+        
         height: 100vh;
-        /* На всю высоту экрана (опционально) */
+        
     }
 
-    .conteiner__r {
-        
-        
-
-    }
+   
 
     .aside__burger-menu {
         display: block;
