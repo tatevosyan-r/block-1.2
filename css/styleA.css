@@ -24,7 +24,7 @@
     --gap-footer: 15%;
     
     /* Текст */
-    --font-family: 'TT Lakes', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-family: 'TT Lakes', sans-serif;
     --font-size-base: 16px;
     --font-size-large: 24px;
     --font-weight-medium: 500;
