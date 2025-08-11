@@ -73,18 +73,7 @@
 }
 
 /* Базовые стили меню */
-.aside__burger-menu {
-    display: flex;
-    flex-direction: column;
-    gap: var(--gap-footer);
-    width: var(--size-menu-width);
-    height: var(--size-menu-height);
-    z-index: 10;
-    background-color: var(--color-white);
-    width: 320px;
-    padding: 0 var(--gap-xlarge);
-   
-}
+
 
 .aside__burger {
     display: flex;

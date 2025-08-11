@@ -52,9 +52,10 @@ HTML {
     background-color: var(--main-bg);
 }
 
-.conteiner {
-    display: flex;
-    flex-direction: row-reverse;
+
+
+.aside__burger-menu {
+    display: none;
 }
 
 /* Шапка */
@@ -368,6 +369,38 @@ HTML {
     .header,
     .main__title--min {
         display: none;
+    }
+
+    .conteiner {
+        display: grid;
+        grid-template-columns: minmax(320px, auto) 1fr;
+        /* 1fr займёт остальное место */
+        height: 100vh;
+        /* На всю высоту экрана (опционально) */
+    }
+
+    .conteiner__r {
+        
+        
+
+    }
+
+    .aside__burger-menu {
+        display: block;
+        min-width: 320px;
+    }
+
+    .aside__burger-menu {
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap-footer);
+        width: var(--size-menu-width);
+        height: var(--size-menu-height);
+        z-index: 10;
+        background-color: var(--color-white);
+        width: 320px;
+        padding: 0 var(--gap-xlarge);
+
     }
 
     .main {
