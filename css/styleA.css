@@ -10,7 +10,7 @@
     /* Размеры */
     --size-border-radius: 4px;
     --size-menu-width: 320px;
-    --size-menu-height: 1024px;
+    --size-menu-height: 100%;
     
     /* Отступы */
     --gap-small: 5px;
@@ -21,7 +21,7 @@
     --gap-section: 40px;
     --gap-main: 46px;
     --gap-header-top: 18px;
-    --gap-footer: 268px;
+    --gap-footer: 15%;
     
     /* Текст */
     --font-family: 'TT Lakes', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -36,6 +36,40 @@
     
     /* Анимации */
     --transition-speed: 0.2s ease;
+}
+
+/* Standard TT Lakes */
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('../font/TTLakes-Regular.eot');
+    src: local('TT Lakes Regular'), local('TTLakes-Regular'),
+        url('../font/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../font/TTLakes-Regular.woff') format('woff'),
+        url('../font/TTLakes-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('../font/TTLakes-Medium.eot');
+    src: local('TT Lakes Medium'), local('TTLakes-Medium'),
+        url('../font/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../font/TTLakes-Medium.woff') format('woff'),
+        url('../font/TTLakes-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('../font/TTLakes-Bold.eot');
+    src: local('TT Lakes Bold'), local('TTLakes-Bold'),
+        url('../font/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../font/TTLakes-Bold.woff') format('woff'),
+        url('../font/TTLakes-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
 }
 
 /* Базовые стили меню */
