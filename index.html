@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CPS - Сервисный центр Dell</title>
-    
+
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    
     <link rel="stylesheet" href="css/styleA.css">
+    <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div class="conteiner">
         <aside class="aside__burger-menu">
-    
-        
+
+
             <div class="aside__burger">
                 <ul class="burger__top">
                     <li class="burger__top-left">
@@ -26,7 +28,7 @@
                         <a href="#"><img src="img/search.svg" alt="Поиск"></a>
                     </li>
                 </ul>
-                
+
                 <nav class="aside__nav-menu">
                     <ul class="nav__list">
                         <li><a class="nav__list-item active" href="#">Ремонт техники</a></li>
@@ -57,122 +59,410 @@
                     <li><a href="#">EN</a></li>
                     <li><a href="#">CH</a></li>
                 </ul>
-           
+
             </div>
-        
-   </aside> 
+
+        </aside>
         <div class="conteiner__r">
-             <header class="header">
-        <div class="header__container">
-            <div class="header__left">
-                <button class="header__burger" aria-label="Меню">
-                    <img class="icon" src="img/burger.svg" alt="Меню" loading="lazy">
-                </button>
-                <div class="header__divider"></div>
-                <a class="header__logo" href="#" aria-label="CPS">
-                    <img class="header__logo" src="img/logo.svg"  alt="Логотип" loading="lazy">
-                </a>
-            </div>
-            <nav class="header__nav">
-                <ul class="header__nav-list">
-                    <li class="header__nav-item--middle">
-                        <button class="header__nav-btn" aria-label="Позвонить">
-                            <img class="icon" src="img/call.svg"  alt="Позвонить" loading="lazy">
+            <header class="header">
+                <div class="header__container">
+                    <div class="header__left">
+                        <button class="header__burger" aria-label="Меню">
+                            <img class="icon" src="img/burger.svg" alt="Меню" loading="lazy">
                         </button>
-                    </li>
-                    <li class="header__nav-item--middle">
-                        <button class="header__nav-btn" aria-label="Чат">
-                            <img class="icon" src="img/chat.svg"  alt="Чат" loading="lazy">
-                        </button>
-                    </li>
-                    <li class="header__nav-item--middle">
-                        <button class="header__nav-btn" aria-label="Профиль">
-                            <img class="icon" src="img/profile.svg"  alt="Профиль" loading="lazy">
-                        </button>
-                    </li>
-                    <li>
                         <div class="header__divider"></div>
-                    </li>
-                    <li>
-                        <button class="header__nav-btn" aria-label="Оставить заявку">
+                        <a class="header__logo" href="#" aria-label="CPS">
+                            <img class="header__logo" src="img/logo.svg" alt="Логотип" loading="lazy">
+                        </a>
+                    </div>
+                    <nav class="header__nav">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item--middle">
+                                <button class="header__nav-btn" aria-label="Позвонить">
+                                    <img class="icon" src="img/call.svg" alt="Позвонить" loading="lazy">
+                                </button>
+                            </li>
+                            <li class="header__nav-item--middle">
+                                <button class="header__nav-btn" aria-label="Чат">
+                                    <img class="icon" src="img/chat.svg" alt="Чат" loading="lazy">
+                                </button>
+                            </li>
+                            <li class="header__nav-item--middle">
+                                <button class="header__nav-btn" aria-label="Профиль">
+                                    <img class="icon" src="img/profile.svg" alt="Профиль" loading="lazy">
+                                </button>
+                            </li>
+                            <li>
+                                <div class="header__divider"></div>
+                            </li>
+                            <li>
+                                <button class="header__nav-btn" aria-label="Оставить заявку">
 
-                            <img class="icon" src="img/repair.svg"  alt="Оставить заявку" loading="lazy">
+                                    <img class="icon" src="img/repair.svg" alt="Оставить заявку" loading="lazy">
+                                </button>
+                            </li>
+                            <li>
+                                <button class="header__nav-btn" aria-label="Статус ремонта">
+
+                                    <img class="icon" src="img/checkstatus.svg" alt="Статус ремонта" loading="lazy">
+                                </button>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+
+
+            <main class="main">
+                <div>
+                    <h1 class="main__title--min">Услуги и сервисы</h1>
+                </div>
+
+                <div class="srange-nav-wrapper--max">
+                    <div class="header__left">
+                        <h1 class="main__title">Услуги и сервисы</h1>
+
+
+
+                    </div>
+                    <ul class="srange-nav-wrapper-list">
+                        <li>
+                            <button class="header__nav-btn" aria-label="Оставить заявку">
+                                <span>Оставить заявку</span>
+                                <img class="icon" src="img/repair.svg" alt="Оставить заявку" loading="lazy">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="header__nav-btn" aria-label="Статус ремонта">
+                                <span>Статус ремонта</span>
+                                <img class="icon" src="img/checkstatus.svg" alt="Оставить заявку" loading="lazy">
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+
+                <nav class="header-menu__wrapper " aria-label="Основное меню">
+                    <ul class="header-menu__list">
+                        <li><a href="#" class="header-menu__link">Ремонтируемые бренды</a></li>
+                        <li><a href="#" class="header-menu__link">Ремонтируемые устройства</a></li>
+                        <li><a href="#" class="header-menu__link">Цены на услуги</a></li>
+                        <li><a href="#" class="header-menu__link">Адреса сервисных центров</a></li>
+                        <li><a href="#" class="header-menu__link">Специальные цены</a></li>
+                        <li><a href="#" class="header-menu__link">Отзывы</a></li>
+                    </ul>
+                </nav>
+
+                <div class="main__container">
+                    <section class="main__content">
+                        <p class="main__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+                            Только у нас
+                            вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                        <p class="main__text--secondary">Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                            партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к
+                            нам
+                            обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+                        <button class="main__readmore" aria-expanded="false">
+                            <img src="img/expand.svg" width="24" height="24" alt="" aria-hidden="true">
+                            <span class="next">Читать далее</span>
                         </button>
-                    </li>
-                    <li>
-                        <button class="header__nav-btn" aria-label="Статус ремонта">
+                    </section>
+                    <div class="main__image-wrapper">
+                        <img class="main__image" src="img/cps.png" width="530" height="307" alt="Ремонт техники Dell"
+                            loading="lazy">
+                    </div>
+                </div>
+                <div class="brands--min">
+                    <h2 class="brands__h2">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</h2>
+                    <section class="brands-section">
 
-                            <img class="icon" src="img/checkstatus.svg"  alt="Статус ремонта" loading="lazy">
-                        </button>
-                    </li>
-                </ul>
-            </nav>
+                        <div class="swiper brandsSwiper">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <div class="brands__item">
+                                        <a href="#">
+                                            <div class="brands__card">
+                                                <img src="img/logoPartn/Lenovo.svg" alt="Lenovo">
+                                                <img src="img/logoPartn/go.svg" alt="Перейти">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brands__item">
+                                        <a href="#">
+                                            <div class="brands__card">
+                                                <img src="img/logoPartn/samsung.svg" alt="Samsung">
+                                                <img src="img/logoPartn/go.svg" alt="Перейти">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brands__item">
+                                        <a href="#">
+                                            <div class="brands__card">
+                                                <img src="img/logoPartn/apple.svg" alt="Apple">
+                                                <img src="img/logoPartn/go.svg" alt="Перейти">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brands__item">
+                                        <a href="#">
+                                            <div class="brands__card">
+                                                <img src="img/logoPartn/viewsonic.svg" alt="ViewSonic">
+                                                <img src="img/logoPartn/go.svg" alt="Перейти">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brands__item">
+                                        <a href="#">
+                                            <div class="brands__card">
+                                                <img src="img/logoPartn/bosch.svg" alt="Bosch">
+                                                <img src="img/logoPartn/go.svg" alt="Перейти">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brands__item">
+                                        <a href="#">
+                                            <div class="brands__card">
+                                                <img src="img/logoPartn/hp.svg" alt="HP">
+                                                <img src="img/logoPartn/go.svg" alt="Перейти">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brands__item">
+                                        <a href="#">
+                                            <div class="brands__card">
+                                                <img src="img/logoPartn/acer.svg" alt="Acer">
+                                                <img src="img/logoPartn/go.svg" alt="Перейти">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brands__item">
+                                        <a href="#">
+                                            <div class="brands__card">
+                                                <img src="img/logoPartn/sony.svg" alt="Sony">
+                                                <img src="img/logoPartn/go.svg" alt="Перейти">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brands__item">
+                                        <a href="#">
+                                            <div class="brands__card">
+                                                <img src="img/logoPartn/Lenovo.svg" alt="Lenovo">
+                                                <img src="img/logoPartn/go.svg" alt="Перейти">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brands__item">
+                                        <a href="#">
+                                            <div class="brands__card">
+                                                <img src="img/logoPartn/samsung.svg" alt="Samsung">
+                                                <img src="img/logoPartn/go.svg" alt="Перейти">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brands__item">
+                                        <a href="#">
+                                            <div class="brands__card">
+                                                <img src="img/logoPartn/apple.svg" alt="Apple">
+                                                <img src="img/logoPartn/go.svg" alt="Перейти">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brands__item">
+                                        <a href="#">
+                                            <div class="brands__card">
+                                                <img src="img/logoPartn/sony.svg" alt="Sony">
+                                                <img src="img/logoPartn/go.svg" alt="Перейти">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Навигация -->
+                            <div class="swiper-pagination-container">
+                                <div class="swiper-pagination"></div>
+                            </div>
+
+
+                        </div>
+                    </section>
+                </div>
+
+                <div class="brands--midl">
+                    <h2 class="brands__h2">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</h2>
+                    <div class="brands__wrapper">
+                        <ul class="brands__list">
+                            <div class="brands__container">
+                                <li class="brands__item"><a href="#">
+                                        <div class="brands__card"><img src="img/logoPartn/Lenovo.svg" alt="Lenovo"><img
+                                                src="img/logoPartn/go.svg" alt="Перейти"></div>
+                                    </a></li>
+                                <li class="brands__item"><a href="#">
+                                        <div class="brands__card"><img src="img/logoPartn/samsung.svg"
+                                                alt="Samsung"><img src="img/logoPartn/go.svg" alt="Перейти"></div>
+                                    </a></li>
+                                <li class="brands__item"><a href="#">
+                                        <div class="brands__card"><img src="img/logoPartn/apple.svg" alt="Apple"><img
+                                                src="img/logoPartn/go.svg" alt="Перейти"></div>
+                                    </a></li>
+                                <li class="brands__item"><a href="#">
+                                        <div class="brands__card"><img src="img/logoPartn/viewsonic.svg"
+                                                alt="ViewSonic"><img src="img/logoPartn/go.svg" alt="Перейти"></div>
+                                    </a></li>
+                                <li class="brands__item"><a href="#">
+                                        <div class="brands__card"><img src="img/logoPartn/bosch.svg" alt="Bosch"><img
+                                                src="img/logoPartn/go.svg" alt="Перейти"></div>
+                                    </a></li>
+                                <li class="brands__item"><a href="#">
+                                        <div class="brands__card"><img src="img/logoPartn/hp.svg" alt="HP"><img
+                                                src="img/logoPartn/go.svg" alt="Перейти"></div>
+                                    </a></li>
+
+
+                            </div>
+                            <div class="brands__conteiner--bottom">
+                                <li class="brands__item"><a href="#">
+                                        <div class="brands__card"><img src="img/logoPartn/acer.svg" alt="Acer"><img
+                                                src="img/logoPartn/go.svg" alt="Перейти"></div>
+                                    </a></li>
+                                <li class="brands__item"><a href="#">
+                                        <div class="brands__card"><img src="img/logoPartn/sony.svg" alt="Sony"><img
+                                                src="img/logoPartn/go.svg" alt="Перейти"></div>
+                                    </a></li>
+                                <li class="brands__item"><a href="#">
+                                        <div class="brands__card"><img src="img/logoPartn/Lenovo.svg" alt="Lenovo"><img
+                                                src="img/logoPartn/go.svg" alt="Перейти"></div>
+                                    </a></li>
+                                <li class="brands__item"><a href="#">
+                                        <div class="brands__card"><img src="img/logoPartn/samsung.svg"
+                                                alt="Samsung"><img src="img/logoPartn/go.svg" alt="Перейти"></div>
+                                    </a></li>
+                                <li class="brands__item"><a href="#">
+                                        <div class="brands__card"><img src="img/logoPartn/apple.svg" alt="Apple"><img
+                                                src="img/logoPartn/go.svg" alt="Перейти"></div>
+                                    </a></li>
+                            </div>
+
+                            <div>
+                                <button id="showAllButton" class="main__readmore" aria-expanded="false">
+                                    <img src="img/expand.svg" alt="" aria-hidden="true">
+                                    <span class="next">Показать всё</span>
+                                </button>
+                                <button id="hideAllButton" class="main__readmore" aria-expanded="false">
+                                    <img src="img/scr.svg" alt="" aria-hidden="true">
+                                    <span class="next">Скрыть всё</span>
+                                </button>
+                            </div>
+                        </ul>
+                    </div>
+
+
+                </div>
+                <div class="brands--max">
+                    <h2 class="brands__h2">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</h2>
+                    <div class="brands__wrapper">
+                        <ul class="brands__list">
+                            <div class="brands__container">
+                                <li class="brands__item"><a href="#">
+                                        <div class="brands__card"><img src="img/logoPartn/Lenovo.svg" alt="Lenovo"><img
+                                                src="img/logoPartn/go.svg" alt="Перейти"></div>
+                                    </a></li>
+                                <li class="brands__item"><a href="#">
+                                        <div class="brands__card"><img src="img/logoPartn/samsung.svg"
+                                                alt="Samsung"><img src="img/logoPartn/go.svg" alt="Перейти"></div>
+                                    </a></li>
+                                <li class="brands__item"><a href="#">
+                                        <div class="brands__card"><img src="img/logoPartn/apple.svg" alt="Apple"><img
+                                                src="img/logoPartn/go.svg" alt="Перейти"></div>
+                                    </a></li>
+                                <li class="brands__item"><a href="#">
+                                        <div class="brands__card"><img src="img/logoPartn/viewsonic.svg"
+                                                alt="ViewSonic"><img src="img/logoPartn/go.svg" alt="Перейти"></div>
+                                    </a></li>
+                                <li class="brands__item"><a href="#">
+                                        <div class="brands__card"><img src="img/logoPartn/bosch.svg" alt="Bosch"><img
+                                                src="img/logoPartn/go.svg" alt="Перейти"></div>
+                                    </a></li>
+                                <li class="brands__item"><a href="#">
+                                        <div class="brands__card"><img src="img/logoPartn/hp.svg" alt="HP"><img
+                                                src="img/logoPartn/go.svg" alt="Перейти"></div>
+                                    </a></li>
+                                <li class="brands__item"><a href="#">
+                                        <div class="brands__card"><img src="img/logoPartn/acer.svg" alt="Acer"><img
+                                                src="img/logoPartn/go.svg" alt="Перейти"></div>
+                                    </a></li>
+                                <li class="brands__item"><a href="#">
+                                        <div class="brands__card"><img src="img/logoPartn/sony.svg" alt="Sony"><img
+                                                src="img/logoPartn/go.svg" alt="Перейти"></div>
+                                    </a></li>
+                                <div class="brands__container--bottom--max">
+                                    <li class="brands__item"><a href="#">
+                                            <div class="brands__card"><img src="img/logoPartn/Lenovo.svg"
+                                                    alt="Lenovo"><img src="img/logoPartn/go.svg" alt="Перейти"></div>
+                                        </a></li>
+                                    <li class="brands__item"><a href="#">
+                                            <div class="brands__card"><img src="img/logoPartn/samsung.svg"
+                                                    alt="Samsung"><img src="img/logoPartn/go.svg" alt="Перейти"></div>
+                                        </a></li>
+                                    <li class="brands__item"><a href="#">
+                                            <div class="brands__card"><img src="img/logoPartn/apple.svg"
+                                                    alt="Apple"><img src="img/logoPartn/go.svg" alt="Перейти"></div>
+                                        </a></li>
+
+                                </div>
+                              
+                                
+
+                        </ul >
+                           <div class="ButtonMax">
+                            <button id="showAllButtonMax" class="main__readmore" aria-expanded="false">
+                                <img src="img/expand.svg" alt="" aria-hidden="true">
+                                <span class="next">Показать всё</span>
+                            </button>
+                            <button id="hideAllButtonMax" class="main__readmore" aria-expanded="false">
+                                <img src="img/scr.svg" alt="" aria-hidden="true">
+                                <span class="next">Скрыть всё</span>
+                            </button>
+                        </div>
+                    </div>
+
+
+                </div>
         </div>
-    </header>
 
-
-
-    <main class="main">
-        <div><h1 class="main__title--min">Услуги и сервисы</h1></div>
-        
-        <div class="srange-nav-wrapper--max">
-            <div class="header__left">
-                <h1 class="main__title">Услуги и сервисы</h1>
-
-
-
-            </div>
-            <ul class="srange-nav-wrapper-list">
-                <li>
-                    <button class="header__nav-btn" aria-label="Оставить заявку">
-                        <span>Оставить заявку</span>
-                        <img class="icon" src="img/repair.svg" alt="Оставить заявку" loading="lazy">
-                    </button>
-                </li>
-                <li>
-                    <button class="header__nav-btn" aria-label="Статус ремонта">
-                        <span>Статус ремонта</span>
-                        <img class="icon" src="img/checkstatus.svg" alt="Оставить заявку" loading="lazy">
-                    </button>
-                </li>
-            </ul>
-        </div>
-        
-        <nav class="header-menu__wrapper " aria-label="Основное меню">
-            <ul class="header-menu__list">
-                <li><a href="#" class="header-menu__link">Ремонтируемые бренды</a></li>
-                <li><a href="#" class="header-menu__link">Ремонтируемые устройства</a></li>
-                <li><a href="#" class="header-menu__link">Цены на услуги</a></li>
-                <li><a href="#" class="header-menu__link">Адреса сервисных центров</a></li>
-                <li><a href="#" class="header-menu__link">Специальные цены</a></li>
-                <li><a href="#" class="header-menu__link">Отзывы</a></li>
-            </ul>
-        </nav>
-
-        <div class="main__container">
-            <section class="main__content">
-                <p class="main__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас
-                    вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                <p class="main__text--secondary">Мы успешно работаем с 1992 года и заслужили репутацию надежного
-                    партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам
-                    обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
-                <button class="main__readmore" aria-expanded="false">
-                    <img src="img/expand.svg" width="24" height="24" alt="" aria-hidden="true">
-                    <span class="next">Читать далее</span>
-                </button>
-            </section>
-            <div class="main__image-wrapper">
-                <img class="main__image" src="img/cps.png" width="530" height="307" alt="Ремонт техники Dell"
-                    loading="lazy">
-            </div>
-        </div>
-    </main>
-        </div>
-       
-    
 
     </div>
-    
+
+    </main>
+    </div>
+
+
+
+    <script src="script.js"></script>
+    <script src="/swiper/swiper-bundle.min.js"></script>
 </body>
 
 </html>
