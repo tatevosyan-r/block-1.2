@@ -4,9 +4,9 @@
     font-family: 'TTLakes';
     src: url('../fonts/TTLakes-Regular.eot');
     src: local('TT Lakes Regular'), local('TTLakes-Regular'),
-        url('../fontss/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
         url('../fonts/TTLakes-Regular.woff') format('woff'),
-        url('../fontss/TTLakes-Regular.ttf') format('truetype');
+        url('../fonts/TTLakes-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -389,7 +389,7 @@ HTML {
     position: relative;
     width: 100%;
     max-width: 1200px;
-    
+}   
 
 
 .brands-section__h2 {
@@ -622,7 +622,7 @@ HTML {
 
     }
 
-    .brands__container, .brands__conteiner--bottom {
+    .brands__container, .brands__container--bottom{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 16px;
