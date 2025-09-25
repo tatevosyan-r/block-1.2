@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function setupBrandsToggle() {
     const showAllButton = document.getElementById('showAllButton');
     const hideAllButton = document.getElementById('hideAllButton');
-    const bottomContainer = document.querySelector('.brands__conteiner--bottom');
+    const bottomContainer = document.querySelector('.brands__container--bottom');
     
     // Добавляем CSS классы для управления видимостью
     bottomContainer.classList.add('hidden');
