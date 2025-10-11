@@ -375,9 +375,7 @@ HTML {
     box-sizing: border-box;
 }
 
-.swiper-slide {
-    max-width: 100%;
-}
+
 
 .swiper-pagination-container {
     position: absolute;
@@ -409,21 +407,13 @@ HTML {
 /* Контейнер Swiper */
 .swiper {
     width: 100%;
-    padding: 20px 0 60px 0;
+    padding: 20px 25px 60px 25px;
     /* Отступ снизу для пагинации */
 }
 
 
 /* Слайды */
-.swiper-slide {
-    width: 240px !important;
-    /* Фиксированная ширина */
-    height: 72px !important;
-    /* Фиксированная высота */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 /* Карточка бренда */
 .brands__card {
@@ -502,6 +492,76 @@ HTML {
     background-color: rgba(181, 182, 188, 1);
     transform: scale(1.2);
 }
+
+
+
+
+/*Сервисы свайпер*/
+    .services--min {
+    overflow: hidden;
+    width: 100%;
+}
+
+.servicesSwiper {
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+  .services--midl {
+        display: none;
+    }
+
+    .services--max {
+        display: none;
+       
+    }
+
+
+
+     .services__h2 {
+        display: flex;
+        height: 56px;
+        padding-left: 32px;
+        background: linear-gradient(270deg, #F8F8F8, #FFFFFF 100%);
+        align-items: center;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: "TTLakes";
+        color: var(--text-nav);
+    }
+    
+
+
+
+
+    .services__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 16px;
+        width: 240px;
+        height: 160px;
+        background: #FFFFFF;
+        border: 1px solid #EAEAEA;
+        border-radius: 6px;
+        box-sizing: border-box;
+        transition: all 0.3s ease;
+    }
+
+
+
+    .services__card_h3 {
+        align-self: flex-start;
+        font-family: TTLakes;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .services__card_go {
+        align-self: flex-end;
+        width: 18%;
+    }
+
 
 @media (max-width: 768px) {
     .brands__list-wrapper {
@@ -651,7 +711,9 @@ HTML {
         min-width: 240px;
         min-height: 72px;
     }
-
+    .brands__card{
+        width: 100%;
+    }
 
 
     .brands__card:hover {
@@ -665,8 +727,123 @@ HTML {
         object-fit: contain;
     }
 
+    /*СЕРВИСЫ*/
+    .services--min{
+        display: none;
+    }
+    .services--max {
+        display: none;
+    }
+
+    .services--midl {
+        display: flex;
+        flex-direction: column;
+        
+    }
+        .services__container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        
+        column-gap: 35px;
+
+    }
+
+    .services__wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 24px;
+    }
+
+    .services__h2 {
+        display: flex;
+        height: 56px;
+        padding-left: 32px;
+        background: linear-gradient(270deg, #F8F8F8, #FFFFFF 100%);
+        align-items: center;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: "TTLakes";
+        color: var(--text-nav);
+    }
+
+  
 
 
+    .services__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 16px;
+        width: 100%;
+        height: 100%;
+        background: #FFFFFF;
+        border: 1px solid #EAEAEA;
+        border-radius: 6px;
+        box-sizing: border-box;
+        transition: all 0.3s ease;
+    }
+
+
+
+    .services__card_h3 {
+        align-self: flex-start;
+        font-family: TTLakes;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .services__card_go {
+        align-self: flex-end;
+        width: 18%;
+    }
+
+
+
+    /*ЦЕНЫ*/
+.prices{
+    padding: 25px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    background-color: #f8f8f8;
+    text-align: left;
+    padding: 12px 8px;
+    border: none;
+}
+
+tbody td {
+    padding: 12px 8px;
+    border: none;
+    text-align: left;
+}
+
+tbody tr {
+    background-color: #ffffff;
+    border-radius: 6px;
+}
+
+/* Создание скругленных углов для строк */
+tbody tr:first-child td:first-child {
+    border-top-left-radius: 6px;
+}
+
+tbody tr:first-child td:last-child {
+    border-top-right-radius: 6px;
+}
+
+tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 6px;
+}
+
+tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 6px;
+}
 
 }
 
@@ -680,7 +857,7 @@ HTML {
         padding: 0;
         overflow: hidden;
         pointer-events: none;
-       
+
     }
 }
 
@@ -694,7 +871,7 @@ HTML {
 
     .conteiner {
         display: grid;
-        grid-template-columns:minmax(0, 320px) calc(100% - 320px);
+        grid-template-columns: minmax(0, 320px) calc(100% - 320px);
 
         height: 100vh;
 
@@ -781,11 +958,12 @@ HTML {
 
     /*БРЕНДЫ*/
 
-    .brands__wrapper{
+    .brands__wrapper {
         display: flex;
         flex-direction: column;
         gap: 16px;
     }
+
     .brands--min {
         display: none;
     }
@@ -813,7 +991,8 @@ HTML {
 
     }
 
-    .brands__container, .brands__container--bottom--max {
+    .brands__container,
+    .brands__container--bottom--max {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         list-style: none;
@@ -821,18 +1000,18 @@ HTML {
         column-gap: 35px;
         margin: 0;
         width: 100%;
-        
+
         box-sizing: border-box;
-        
-         
+
+
     }
 
-   
-     .brands__item {
+
+    .brands__item {
         min-width: 95%;
         height: 95%;
     }
- 
+
 
     .brands__card {
         display: flex;
@@ -840,7 +1019,7 @@ HTML {
 
         width: 100%;
         height: 100%;
-        
+
         background: #FFFFFF;
         border: 1px solid #EAEAEA;
         border-radius: 6px;
@@ -855,7 +1034,7 @@ HTML {
         max-height: 35px;
         max-width: 90px;
         object-fit: contain;
-        
+
     }
 
     .colum-4 {
@@ -866,7 +1045,73 @@ HTML {
         visibility: hidden;
     }
 
+    /*РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ*/
+    .services__h2 {
+        display: flex;
+        height: 56px;
+        padding-left: 32px;
+        background: linear-gradient(270deg, #F8F8F8, #FFFFFF 100%);
+        align-items: center;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: "TTLakes";
+        color: var(--text-nav);
+    }
 
+    .services--midl {
+        display: none;
+    }
+       .services--min{
+        display: none;
+    }
+
+    .services--max {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .services__container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        
+        column-gap: 35px;
+
+    }
+
+    .services__item {
+        min-width: 95%;
+        height: 95%;
+    }
+
+    .services__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 16px;
+        width: 100%;
+        
+        background: #FFFFFF;
+        border: 1px solid #EAEAEA;
+        border-radius: 6px;
+        box-sizing: border-box;
+        transition: all 0.3s ease;
+    }
+
+
+
+    .services__card_h3 {
+        align-self: flex-start;
+        font-family: TTLakes;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .services__card_go {
+        align-self: flex-end;
+        width: 18%;
+    }
 
 }
 

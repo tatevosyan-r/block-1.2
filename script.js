@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const swiper = new Swiper('.brandsSwiper', {
-        slidesPerView: 'auto', // Автоматическое количество слайдов
+        slidesPerView: '2', // Автоматическое количество слайдов
         centeredSlides: true,  // Центрирование активного слайда
         spaceBetween: 20,      // Отступ между слайдами
         
@@ -15,6 +15,26 @@ document.addEventListener('DOMContentLoaded', function() {
         },
     );
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const swiper = new Swiper('.servicesSwiper', {
+        slidesPerView: '2', // Автоматическое количество слайдов
+        centeredSlides: true,  // Центрирование активного слайда
+        spaceBetween: 20,      // Отступ между слайдами
+        
+       
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            dynamicBullets: false,
+        }
+      
+       
+        },
+    );
+});
+
 
 
 
@@ -72,3 +92,47 @@ function setupBrandsToggleMax() {
 
 
 document.addEventListener('DOMContentLoaded', setupBrandsToggleMax);
+
+
+function servicesShow(){
+    const showServisBTN = document.getElementById('showServisBTN-midl')
+    const hideServisBTN = document.getElementById('hideServisBTN-midl')
+    const servicesHidden = document.getElementById('services--midl-hidden')
+
+
+    showServisBTN.addEventListener('click', ()=>{
+        servicesHidden.classList.remove('hidden');
+        hideServisBTN.classList.remove('hidden');
+        showServisBTN.classList.add('hidden')
+    });
+    
+    hideServisBTN.addEventListener('click', ()=>{
+        servicesHidden.classList.add('hidden');
+        hideServisBTN.classList.add('hidden');
+        showServisBTN.classList.remove('hidden')
+    });
+}
+
+document.addEventListener('DOMContentLoaded', servicesShow);
+
+
+function servicesShowMax(){
+    const showServisBTN = document.getElementById('showServisBTN-max')
+    const hideServisBTN = document.getElementById('hideServisBTN-max')
+    // const servicesHidden = document.getElementById('services--midl-hidden')
+
+
+    showServisBTN.addEventListener('click', ()=>{
+        // servicesHidden.classList.remove('hidden');
+        hideServisBTN.classList.remove('hidden');
+        showServisBTN.classList.add('hidden')
+    });
+    
+    hideServisBTN.addEventListener('click', ()=>{
+       // servicesHidden.classList.add('hidden');
+        hideServisBTN.classList.add('hidden');
+        showServisBTN.classList.remove('hidden')
+    });
+}
+
+document.addEventListener('DOMContentLoaded', servicesShowMax);
