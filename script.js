@@ -155,3 +155,167 @@ function servicesShowMax(){
 }
 
 document.addEventListener('DOMContentLoaded', servicesShowMax);
+
+
+
+
+function burgerShow(){
+    const showBurgerBTN = document.getElementById('burgerOn')
+    const burger = document.getElementById('aside__burger-menu')
+    const burgerOff = document.getElementById('burgerOff')
+    const conteiner__q = document.getElementById('conteiner__q')
+
+
+    showBurgerBTN.addEventListener('click', ()=>{
+        
+        burger.classList.add('aside__burger-menu-on');
+        conteiner__q.classList.remove('hidden')
+        conteiner__q.classList.add('conteiner__q')
+        
+    });
+       burgerOff.addEventListener('click', ()=>{
+        
+        burger.classList.remove('aside__burger-menu-on');
+        conteiner__q.classList.remove('conteiner__q')
+
+        
+    });
+
+        conteiner__q.addEventListener('click', ()=>{
+        
+        burger.classList.remove('aside__burger-menu-on');
+        conteiner__q.classList.remove('conteiner__q')
+
+        
+    });
+ 
+}
+
+document.addEventListener('DOMContentLoaded', burgerShow);
+
+
+
+function formShow(){
+    const formBTN = document.getElementById('formBTN')
+    const form = document.getElementById('form')
+    const closeBTN = document.getElementById('closeBTN')
+    const conteiner__w = document.getElementById('conteiner__w')
+
+
+    formBTN.addEventListener('click', ()=>{
+        
+        form.classList.add('form--on');
+        conteiner__w.classList.add('conteiner__w')
+        
+    });
+       closeBTN.addEventListener('click', ()=>{
+        
+        form.classList.remove('form--on');
+        conteiner__w.classList.remove('hidden')
+        conteiner__w.classList.remove('conteiner__w')
+    });
+    
+     conteiner__w.addEventListener('click', ()=>{
+        
+        form.classList.remove('form--on');
+        conteiner__w.classList.remove('conteiner__w')
+    });
+}
+
+document.addEventListener('DOMContentLoaded', formShow);
+
+
+
+function formShowMax(){
+    const formBTNmax = document.getElementById('formBTNmax')
+    const form = document.getElementById('form')
+    const closeBTN = document.getElementById('closeBTN')
+    const conteiner__w = document.getElementById('conteiner__w')
+
+
+    formBTNmax.addEventListener('click', ()=>{
+        
+        form.classList.add('form--on');
+        conteiner__w.classList.add('conteiner__w')
+        
+    });
+       closeBTN.addEventListener('click', ()=>{
+        
+        form.classList.remove('form--on');
+        conteiner__w.classList.remove('hidden')
+        conteiner__w.classList.remove('conteiner__w')
+    });
+    
+     conteiner__w.addEventListener('click', ()=>{
+        
+        form.classList.remove('form--on');
+        conteiner__w.classList.remove('conteiner__w')
+    });
+}
+
+document.addEventListener('DOMContentLoaded', formShowMax);
+
+
+
+function callShow(){
+    const statusBTN = document.getElementById('statusBTN')
+    const call = document.getElementById('call')
+    const closeBTNcall = document.getElementById('closeBTNcall')
+    const conteiner__e = document.getElementById('conteiner__e')
+
+
+    statusBTN.addEventListener('click', ()=>{
+        
+        call.classList.add('call--on');
+        conteiner__e.classList.remove('hidden')
+        conteiner__e.classList.add('conteiner__e')
+        
+    });
+       closeBTNcall.addEventListener('click', ()=>{
+        
+        call.classList.remove('call--on');
+        
+        conteiner__e.classList.remove('conteiner__e')
+    });
+    
+     conteiner__e.addEventListener('click', ()=>{
+        
+        call.classList.remove('call--on');
+        conteiner__e.classList.remove('conteiner__e')
+    });
+}
+
+document.addEventListener('DOMContentLoaded', callShow);
+
+
+
+
+function callShowMax(){
+    const callBTNmax = document.getElementById('callBTNmax')
+    const call = document.getElementById('call')
+    const closeBTNcall = document.getElementById('closeBTNcall')
+    const conteiner__e = document.getElementById('conteiner__e')
+
+
+    callBTNmax.addEventListener('click', ()=>{
+        
+        call.classList.add('call--on');
+        conteiner__e.classList.remove('hidden')
+        conteiner__e.classList.add('conteiner__e')
+        
+    });
+       closeBTNcall.addEventListener('click', ()=>{
+        
+        call.classList.remove('call--on');
+        
+        conteiner__e.classList.remove('conteiner__e')
+    });
+    
+     conteiner__e.addEventListener('click', ()=>{
+        
+        call.classList.remove('call--on');
+        conteiner__e.classList.remove('conteiner__e')
+    });
+}
+
+document.addEventListener('DOMContentLoaded', callShowMax);

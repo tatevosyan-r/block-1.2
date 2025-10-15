@@ -14,14 +14,17 @@
 </head>
 
 <body>
+    <div id="conteiner__q" class="hidden"></div>
+    <div id="conteiner__w" class="hidden"></div>
+    <div id="conteiner__e" class="hidden"></div>
     <div class="conteiner">
-        <aside class="aside__burger-menu">
+        <aside id="aside__burger-menu" class="aside__burger-menu">
 
 
             <div class="aside__burger">
                 <ul class="burger__top">
                     <li class="burger__top-left">
-                        <a href="#"><img src="img/burger.svg" alt="Меню"></a>
+                        <a id="burgerOff" href="#"><img src="img/burgerOff.svg" alt="Меню"></a>
                         <a href="#"><img src="img/Group.svg" alt="Логотип компании"></a>
                     </li>
                     <li class="burger__top-right">
@@ -63,11 +66,73 @@
             </div>
 
         </aside>
+
         <div class="conteiner__r">
+            <aside id="form" class="form">
+                <button id="closeBTN" class="closeBTN"><img src="/img/burgerOff.svg" alt=""></button>
+                <div class="form-container">
+                    <form class="contact-form">
+                        <h2 class="form-title">Обратная связь</h2>
+
+                        <div class="form-group">
+
+                            <input type="text" id="name" class="form-control" placeholder="Имя" required>
+                        </div>
+
+                        <div class="form-group">
+
+                            <input type="tel" id="phone" class="form-control" placeholder="Телефон" required>
+                        </div>
+
+                        <div class="form-group">
+
+                            <input type="email" id="email" class="form-control" placeholder="Электронная почта"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+
+                            <textarea id="message" class="form-control" placeholder="Cообщение" required></textarea>
+                        </div>
+                        <div>
+                            <p class="form__text">Нажимая “отправить”, вы даете согласие на <a class="form__text_link"
+                                    href="#">обработку персональных данных </a> и соглашаетесь с нашей <a
+                                    class="form__text_link" href="#"> политикой конфиденциальности</a></p>
+                        </div>
+                        <button type="submit" class="submit-btn"><img src="/img/submit.svg" alt=""></button>
+
+                    </form>
+                </div>
+            </aside>
+
+            <aside id="call" class="call">
+                <button id="closeBTNcall" class="closeBTN"><img src="/img/burgerOff.svg" alt=""></button>
+                <div class="form-container">
+                    <form class="contact-form">
+                        <h2 class="form-title">Заказать звонок</h2>
+
+                     
+
+                        <div class="form-group">
+
+                            <input type="tel" id="phone" class="form-control" placeholder="Телефон" required>
+                        </div>
+
+                        
+                        <div>
+                            <p class="form__text">Нажимая “отправить”, вы даете согласие на <a class="form__text_link"
+                                    href="#">обработку персональных данных </a> и соглашаетесь с нашей <a
+                                    class="form__text_link" href="#"> политикой конфиденциальности</a></p>
+                        </div>
+                        <button type="submit" class="submit-btn"><img src="/img/submit.svg" alt=""></button>
+
+                    </form>
+                </div>
+            </aside>
             <header class="header">
                 <div class="header__container">
                     <div class="header__left">
-                        <button class="header__burger" aria-label="Меню">
+                        <button id="burgerOn" class="header__burger" aria-label="Меню">
                             <img class="icon" src="img/burger.svg" alt="Меню" loading="lazy">
                         </button>
                         <div class="header__divider"></div>
@@ -96,13 +161,13 @@
                                 <div class="header__divider"></div>
                             </li>
                             <li>
-                                <button class="header__nav-btn" aria-label="Оставить заявку">
+                                <button id="formBTN" class="header__nav-btn" aria-label="Оставить заявку">
 
                                     <img class="icon" src="img/repair.svg" alt="Оставить заявку" loading="lazy">
                                 </button>
                             </li>
                             <li>
-                                <button class="header__nav-btn" aria-label="Статус ремонта">
+                                <button id="statusBTN" class="header__nav-btn" aria-label="Статус ремонта">
 
                                     <img class="icon" src="img/checkstatus.svg" alt="Статус ремонта" loading="lazy">
                                 </button>
@@ -127,14 +192,14 @@
 
                     </div>
                     <ul class="srange-nav-wrapper-list">
-                        <li>
+                        <li id="formBTNmax">
                             <button class="header__nav-btn" aria-label="Оставить заявку">
                                 <span>Оставить заявку</span>
                                 <img class="icon" src="img/repair.svg" alt="Оставить заявку" loading="lazy">
                             </button>
                         </li>
                         <li>
-                            <button class="header__nav-btn" aria-label="Статус ремонта">
+                            <button id="callBTNmax" class="header__nav-btn" aria-label="Статус ремонта">
                                 <span>Статус ремонта</span>
                                 <img class="icon" src="img/checkstatus.svg" alt="Оставить заявку" loading="lazy">
                             </button>
@@ -793,7 +858,7 @@
                                 </div>
                             </div>
                         </section>
-                        
+
                         <div class="prices__footer">
                             <div>
                                 <p class="prices__footer_text">
@@ -895,19 +960,19 @@
 
 
             </main>
-                <footer>
-        <div class="footer__l">
-            <p>© 2019 CPS
-            </p>
-            <p>Разработано командой Apesong </p>
-        </div>
-        <div >
-            <p class="politic">Политика конфиденциальности</p>
-        </div>
-        <div  class="footer__r">
-            <p>Информация, размещенная на данной странице, не является публичной офертой</p>
-        </div>
-    </footer>
+            <footer>
+                <div class="footer__l">
+                    <p>© 2019 CPS
+                    </p>
+                    <p>Разработано командой Apesong </p>
+                </div>
+                <div>
+                    <p class="politic">Политика конфиденциальности</p>
+                </div>
+                <div class="footer__r">
+                    <p>Информация, размещенная на данной странице, не является публичной офертой</p>
+                </div>
+            </footer>
         </div>
 
 
