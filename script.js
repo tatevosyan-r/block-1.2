@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     const swiper = new Swiper('.brandsSwiper', {
-        slidesPerView: '2', // Автоматическое количество слайдов
-        centeredSlides: true,  // Центрирование активного слайда
-        spaceBetween: 20,      // Отступ между слайдами
+        slidesPerView: 'auto', // Автоматическое количество слайдов
+        
+        spaceBetween: 10,      // Отступ между слайдами
         
        
         pagination: {
@@ -19,9 +19,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.addEventListener('DOMContentLoaded', function() {
     const swiper = new Swiper('.servicesSwiper', {
-        slidesPerView: '2', // Автоматическое количество слайдов
-        centeredSlides: true,  // Центрирование активного слайда
-        spaceBetween: 20,      // Отступ между слайдами
+        slidesPerView: 'auto', // Автоматическое количество слайдов
+        
+        spaceBetween: 10,      // Отступ между слайдами
         
        
         pagination: {
@@ -35,6 +35,25 @@ document.addEventListener('DOMContentLoaded', function() {
     );
 });
 
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const swiper = new Swiper('.pricesSwiper', {
+        slidesPerView: 'auto', // Автоматическое количество слайдов
+        
+        spaceBetween: 50,      // Отступ между слайдами
+        
+       
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            dynamicBullets: false,
+        }
+      
+       
+        },
+    );
+});
 
 
 
