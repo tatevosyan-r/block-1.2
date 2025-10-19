@@ -164,6 +164,7 @@ function burgerShow(){
     const burger = document.getElementById('aside__burger-menu')
     const burgerOff = document.getElementById('burgerOff')
     const conteiner__q = document.getElementById('conteiner__q')
+    const body = document.body;
 
 
     showBurgerBTN.addEventListener('click', ()=>{
@@ -171,12 +172,14 @@ function burgerShow(){
         burger.classList.add('aside__burger-menu-on');
         conteiner__q.classList.remove('hidden')
         conteiner__q.classList.add('conteiner__q')
+        body.classList.add('no-scroll');
         
     });
        burgerOff.addEventListener('click', ()=>{
         
         burger.classList.remove('aside__burger-menu-on');
         conteiner__q.classList.remove('conteiner__q')
+        body.classList.remove('no-scroll');
 
         
     });
@@ -185,6 +188,7 @@ function burgerShow(){
         
         burger.classList.remove('aside__burger-menu-on');
         conteiner__q.classList.remove('conteiner__q')
+        body.classList.remove('no-scroll');
 
         
     });
@@ -200,25 +204,30 @@ function formShow(){
     const form = document.getElementById('form')
     const closeBTN = document.getElementById('closeBTN')
     const conteiner__w = document.getElementById('conteiner__w')
+    const body = document.body;
 
 
     formBTN.addEventListener('click', ()=>{
         
         form.classList.add('form--on');
+        conteiner__w.classList.remove('hidden')
         conteiner__w.classList.add('conteiner__w')
+        body.classList.add('no-scroll');
         
     });
        closeBTN.addEventListener('click', ()=>{
         
         form.classList.remove('form--on');
-        conteiner__w.classList.remove('hidden')
+        
         conteiner__w.classList.remove('conteiner__w')
+        body.classList.remove('no-scroll');
     });
     
      conteiner__w.addEventListener('click', ()=>{
         
         form.classList.remove('form--on');
         conteiner__w.classList.remove('conteiner__w')
+        body.classList.remove('no-scroll');
     });
 }
 
@@ -231,25 +240,30 @@ function formShowMax(){
     const form = document.getElementById('form')
     const closeBTN = document.getElementById('closeBTN')
     const conteiner__w = document.getElementById('conteiner__w')
+    const body = document.body;
 
 
     formBTNmax.addEventListener('click', ()=>{
         
         form.classList.add('form--on');
+        conteiner__w.classList.remove('hidden')
         conteiner__w.classList.add('conteiner__w')
+        body.classList.add('no-scroll');
         
     });
        closeBTN.addEventListener('click', ()=>{
         
         form.classList.remove('form--on');
-        conteiner__w.classList.remove('hidden')
+        
         conteiner__w.classList.remove('conteiner__w')
+        body.classList.remove('no-scroll');
     });
     
      conteiner__w.addEventListener('click', ()=>{
         
         form.classList.remove('form--on');
         conteiner__w.classList.remove('conteiner__w')
+        body.classList.remove('no-scroll');
     });
 }
 
@@ -262,6 +276,7 @@ function callShow(){
     const call = document.getElementById('call')
     const closeBTNcall = document.getElementById('closeBTNcall')
     const conteiner__e = document.getElementById('conteiner__e')
+    const body = document.body;
 
 
     statusBTN.addEventListener('click', ()=>{
@@ -269,12 +284,13 @@ function callShow(){
         call.classList.add('call--on');
         conteiner__e.classList.remove('hidden')
         conteiner__e.classList.add('conteiner__e')
+        body.classList.add('no-scroll');
         
     });
        closeBTNcall.addEventListener('click', ()=>{
         
         call.classList.remove('call--on');
-        
+        body.classList.remove('no-scroll');
         conteiner__e.classList.remove('conteiner__e')
     });
     
@@ -282,6 +298,7 @@ function callShow(){
         
         call.classList.remove('call--on');
         conteiner__e.classList.remove('conteiner__e')
+        body.classList.remove('no-scroll');
     });
 }
 
@@ -295,6 +312,7 @@ function callShowMax(){
     const call = document.getElementById('call')
     const closeBTNcall = document.getElementById('closeBTNcall')
     const conteiner__e = document.getElementById('conteiner__e')
+    const body = document.body;
 
 
     callBTNmax.addEventListener('click', ()=>{
@@ -302,12 +320,13 @@ function callShowMax(){
         call.classList.add('call--on');
         conteiner__e.classList.remove('hidden')
         conteiner__e.classList.add('conteiner__e')
+        body.classList.add('no-scroll');
         
     });
        closeBTNcall.addEventListener('click', ()=>{
         
         call.classList.remove('call--on');
-        
+        body.classList.remove('no-scroll');
         conteiner__e.classList.remove('conteiner__e')
     });
     
@@ -315,6 +334,8 @@ function callShowMax(){
         
         call.classList.remove('call--on');
         conteiner__e.classList.remove('conteiner__e')
+        body.classList.remove('no-scroll');
+        
     });
 }
 
