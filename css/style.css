@@ -55,15 +55,20 @@ HTML {
     background-color: var(--main-bg);
 }
 
+
+.hidden {
+    display: none !important;
+}
+
 body.no-scroll {
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
-  height: 100%;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
 }
 
 body {
-  transition: overflow 0.3s ease;
+    transition: overflow 0.3s ease;
 }
 
 .aside__burger-menu {
@@ -87,14 +92,16 @@ body {
     padding: 25px;
     padding-top: 0;
 }
-.form{
+
+.form {
     display: none;
 }
+
 .form--on {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    
+
     align-items: flex-start;
     position: absolute;
     padding-top: 25px;
@@ -110,9 +117,10 @@ body {
 }
 
 
-.call{
+.call {
     display: none;
 }
+
 .call--on {
     display: flex;
     flex-direction: column;
@@ -284,7 +292,8 @@ textarea.form-control {
     width: 100%;
     height: 100%;
 }
-.conteiner__w{
+
+.conteiner__w {
 
     position: absolute;
     z-index: 99999;
@@ -294,7 +303,7 @@ textarea.form-control {
     height: 100%;
 }
 
-.conteiner__e{
+.conteiner__e {
 
     position: absolute;
     z-index: 99999;
@@ -484,6 +493,18 @@ textarea.form-control {
     display: none;
 }
 
+
+.no__hidden {
+    display: block;
+    color: var(--mine-text);
+    font-family: 'TTLakes';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    text-align: left;
+}
+
 .main__readmore {
     display: flex;
     align-items: center;
@@ -509,7 +530,7 @@ textarea.form-control {
     display: flex;
     gap: 36px;
     flex-direction: column;
-    padding-left: 25px;
+    padding: 0 20px;
 }
 
 .main__image {
@@ -936,7 +957,7 @@ textarea.form-control {
     /* Ширина картинки */
     height: 10px;
     /* Высота картинки */
-    background-image: url('./img/strelka.svg');
+    background-image: url('../img/strelka.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -992,23 +1013,24 @@ footer {
     }
 
 
-    .closeBTN{
+    .closeBTN {
         position: relative;
         right: 100px;
     }
-    .form-container{
+
+    .form-container {
         position: absolute;
         top: 25px;
     }
 
     .form-title::before {
-    content: "";
-    position: absolute;
-    left: -25px;
-    height: 32px;
-    border-left: 4px solid var(--accent);
-    border-radius: 5px;
-}
+        content: "";
+        position: absolute;
+        left: -25px;
+        height: 32px;
+        border-left: 4px solid var(--accent);
+        border-radius: 5px;
+    }
 
     .header__nav-item--desktop {
         display: none;
@@ -1061,6 +1083,13 @@ footer {
         font-weight: 400;
     }
 
+
+    .main__text--secondary-show {
+        white-space: normal;
+        overflow: visible;
+        text-overflow: clip;
+    }
+
     .brands--min {
         display: none;
     }
@@ -1084,9 +1113,6 @@ footer {
         padding: 25px;
     }
 
-    .hidden {
-        display: none !important;
-    }
 
     .brands__list {
         display: flex;
@@ -1337,7 +1363,9 @@ footer {
 
 
 @media (min-width: 1120px) {
-
+    .main__readmore{
+        display: none;
+    }
     .header,
     .main__title--min {
         display: none;
