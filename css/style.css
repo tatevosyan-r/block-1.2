@@ -1,4 +1,4 @@
-form form-group@import url(styleA.css);
+@form form-group@import url(styleA.css);
 
 @font-face {
     font-family: 'TTLakes';
@@ -936,7 +936,7 @@ textarea.form-control {
     /* Ширина картинки */
     height: 10px;
     /* Высота картинки */
-    background-image: url('/img/strelka.svg');
+    background-image: url('img/strelka.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
